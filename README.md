@@ -5,7 +5,7 @@ MediCore is a modern, responsive hospital operations dashboard built for the fro
 ## Live application
 
 - GitHub source: <https://github.com/rasinenitharunchowdary-cmyk/medicore-hospital-dashboard>
-- Production URL: added immediately after the verified deployment finishes
+- Vercel production: <https://hi-team-as-part-of-the.vercel.app>
 
 The project supports a Vercel-native Next.js build and a Cloudflare-compatible Vinext build.
 
