@@ -26,9 +26,12 @@ test("state layer exposes CRUD for every requested operational module", async ()
 test("submission documentation and deployment fallbacks exist", async () => {
   const readme = await read("README.md");
   const vercel = await read("vercel.json");
+  const netlify = await read("netlify.toml");
   assert.match(readme, /admin@medicore\.com/);
   assert.match(readme, /admin123/);
   assert.match(readme, /Redux Toolkit/);
   assert.match(vercel, /nextjs/);
   assert.match(vercel, /build:vercel/);
+  assert.match(netlify, /command = "npm run build:vercel"/);
+  assert.match(netlify, /publish = "\.next"/);
 });

@@ -6,8 +6,9 @@ MediCore is a modern, responsive hospital operations dashboard built for the fro
 
 - GitHub source: <https://github.com/rasinenitharunchowdary-cmyk/medicore-hospital-dashboard>
 - Vercel production: <https://hi-team-as-part-of-the.vercel.app>
+- Netlify production: <https://medicore-hospital-dashboard.netlify.app>
 
-The project supports a Vercel-native Next.js build and a Cloudflare-compatible Vinext build.
+The project supports Netlify and Vercel through its production Next.js build, plus a Cloudflare-compatible Vinext build.
 
 ## Reviewer access
 
@@ -94,6 +95,10 @@ npm run check
 ### Vercel
 
 Import the GitHub repository and deploy. `vercel.json` selects the Next.js framework and `npm run build:vercel`; the root page plus catch-all app route ensure direct refreshes such as `/patients` and `/reset-password` resolve without an SPA 404.
+
+### Netlify
+
+Import the GitHub repository or deploy with the Netlify CLI. `netlify.toml` selects `npm run build:vercel`, the `.next` publish directory, and Node.js 22.13. Netlify's maintained OpenNext adapter handles the App Router and direct nested routes without custom SPA redirects.
 
 ### OpenAI Sites
 
